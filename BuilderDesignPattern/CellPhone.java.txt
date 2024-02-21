@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class CellPhone {
+    private String brand;
+    private String os;
+    private String processor;
+    private double screenSize;
+    private int battery;
+    private int camera;
+
+    public CellPhone(String os, String processor, double screenSize, int battery, int camera, String brand) {
+        this.os = os;
+        this.processor = processor;
+        this.screenSize = screenSize;
+        this.battery = battery;
+        this.camera = camera;
+        this.brand = brand;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("OS: %s, Processor: %s, ScreenSize: %.2f, Battery: %d, Camera: %d", os, processor, screenSize, battery, camera);
+    }
+}

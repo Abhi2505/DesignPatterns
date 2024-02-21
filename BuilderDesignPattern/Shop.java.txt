@@ -1,0 +1,11 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Main {
+    public static void main(String[] args) {
+        CellPhoneBuilder c=new SamsungPhoneBuilder();
+        c.setCamera(20).setOS("snapdragon").setScreenSize(16.0);
+        System.out.println(c.getPhone());
+    }
+}	

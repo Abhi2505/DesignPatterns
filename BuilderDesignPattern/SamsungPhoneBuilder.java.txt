@@ -1,0 +1,48 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class SamsungPhoneBuilder implements CellPhoneBuilder {
+
+    private String brand = "Samsung";
+    private String os;
+    private String processor;
+    private double screenSize;
+    private int battery;
+    private int camera;
+
+    @Override
+    public CellPhone getPhone() {
+        return new CellPhone(os, processor, screenSize, battery, camera, brand);
+    }
+
+    @Override
+    public CellPhoneBuilder setOS(String os) {
+        this.os = os;
+        return this;
+    }
+
+    @Override
+    public CellPhoneBuilder setProcessor(String processor) {
+        this.processor = processor;
+        return this;
+    }
+
+    @Override
+    public CellPhoneBuilder setScreenSize(double screenSize) {
+        this.screenSize = screenSize;
+        return this;
+    }
+
+    @Override
+    public CellPhoneBuilder setBattery(int battery) {
+        this.battery = battery;
+        return this;
+    }
+
+    @Override
+    public CellPhoneBuilder setCamera(int camera) {
+        this.camera = camera;
+        return this;
+    }
+}

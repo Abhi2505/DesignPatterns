@@ -1,0 +1,12 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+interface CellPhoneBuilder{
+    CellPhone getPhone();
+    CellPhoneBuilder setBattery(int battery);
+    CellPhoneBuilder setCamera(int camera);
+    CellPhoneBuilder setOS(String os);
+    CellPhoneBuilder setProcessor(String processor);
+    CellPhoneBuilder setScreenSize(double screenSize);
+}
