@@ -17,7 +17,7 @@ public class SingletonClas {
 			 obj=new SingletonClas();			
 		}
 	 }
-	 //can we remove the if at line 9 why?
+	 //line no 9 is necessary so that multiple threads need not to wait outside the sync block after object initialisation .
 	 
 	 return obj;
  }
