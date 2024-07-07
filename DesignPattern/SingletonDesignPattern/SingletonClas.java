@@ -1,7 +1,7 @@
 package DesignPattern.SingletonDesignPattern;
 
 public class SingletonClas {
- private static  SingletonClas obj;
+ private static volatile SingletonClas obj;
  private SingletonClas() {
 	 System.out.println("private constructor called 	");
  }
